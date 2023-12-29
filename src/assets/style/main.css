@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+  @keyframes slideToLeft {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    .slide-to-left {
+        animation: slideToLeft 5s linear infinite;
+    }
+
+    .parallax-image {
+        filter: grayscale(100%);
+        transition: filter 0.5s ease;
+    }
+
+    .slick-prev,
+    .slick-next {
+        font-size: 24px;
+        color: white;
+    }
+
+    .slick-prev:hover,
+    .slick-next:hover {
+        color: #ccc;
+    }
+
+    .article-label,
+    .photo-label,
+    .video-label {
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 2px;
+        border-radius: 2px;
+    }
+     .menu {
+            display: none;
+        }
+
+        .menu.active {
+            display: block;
+        }
+
+        /* Tambahkan style tambahan di sini jika diperlukan */
+        .label-container {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 0.5rem;
+            border-radius: 0 0 0 10px;
+            display: none;
+        }
+
+        .label-container {
+            display: flex;
+        }
+
+        .menu .group img {
+            display: none;
+        }
+
+        .menu.active .group img {
+            display: block;
+        }
